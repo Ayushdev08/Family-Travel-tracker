@@ -18,7 +18,7 @@ Welcome to **Family Travel Tracker**, an interactive web application that keeps 
 
 The main page showcases an interactive world map, displaying the countries visited by family members. The countries are dynamically highlighted as users add them to their travel history.
 
-![Main Page](Main-page-screenshot.png)  
+![Main Page](Main-page.png)  
 *Main Page - Interactive World Map*
 
 ---
@@ -27,7 +27,7 @@ The main page showcases an interactive world map, displaying the countries visit
 
 The "Add Country" page allows users to search for and add countries they’ve visited. It's designed for a smooth user experience with real-time feedback.
 
-![Add Country Page](Add-country-page-screenshot.png)  
+![Add Country Page](Add-country-page.png)  
 *Add Country Page - Add Travel Data*
 
 ---
