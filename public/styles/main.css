@@ -1,0 +1,221 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #000000; /* Light gray background for modern look */
+  color: #2c3e50; /* Dark text for readability */
+  line-height: 1.6;
+  margin: 0;
+  height: 100vh;
+}
+
+/* Main container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff7f7; /* White background for container */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #3498db; /* Blue for heading */
+  text-align: center;
+}
+
+/* User Selection & Buttons */
+.tab-view {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.tab-view input[type="submit"] {
+  display: none;
+}
+
+.tab-view label {
+  background-color: #2980b9; /* Blue for user selection buttons */
+  padding: 8px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  width: auto;
+  min-width: 120px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+  font-weight: bold;
+}
+
+.tab-view label:hover {
+  background-color: #1f6f92; /* Darker blue on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Add Country Form */
+.add-country-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.add-country-form input {
+  width: 50%;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 6px;
+  border: 1px solid #7f8c8d;
+  font-size: 1rem;
+  background-color: #ecf0f1;
+}
+
+.add-country-form button {
+  padding: 10px 15px;
+  background-color: #ffffff; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-country-form button:hover {
+  background-color: #00f064;
+}
+
+/* Map Container */
+.ag-canvas {
+  width: 100%;
+  max-width: 700px; /* Limit width on larger screens */
+  height: 400px;
+  background-color: #00b7ff;
+  border-radius: 10px;
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.ag-canvas svg {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+  /* On medium screens */
+  .add-country-form input {
+    width: 60%; /* Make search input a bit smaller */
+  }
+
+  .add-country-form button {
+    width: 30%; /* Make button smaller */
+  }
+
+  .tab-view label {
+    font-size: 0.9rem; /* Reduce font size on medium screens */
+    width: auto;
+    padding: 6px 12px;
+  }
+
+  .ag-canvas {
+    width: 90%; /* Make the map smaller */
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* On small screens */
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .add-country-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .add-country-form input {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .add-country-form button {
+    width: 80%;
+  }
+
+  .tab-view {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-view label {
+    width: 80%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .ag-canvas {
+    width: 100%;
+    height: 300px; /* Adjust map height for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  /* On very small screens */
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .add-country-form input,
+  .add-country-form button {
+    width: 100%;
+  }
+
+  .tab-view label {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .ag-canvas {
+    height: 250px; /* Reduce map height even more */
+  }
+}

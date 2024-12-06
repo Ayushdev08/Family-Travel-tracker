@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add a Family Member</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/new.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Add a Family Member</h1>
+    <form action="/new" method="post" class="user-form">
+      <div class="input-group">
+        <label for="name">What's your name?</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="input-group color-selection">
+        <p>Pick a color:</p>
+        <div class="color-options">
+          <label for="red" class="color-label red"></label>
+          <input type="radio" name="color" id="red" value="red" />
+
+          <label for="green" class="color-label green"></label>
+          <input type="radio" name="color" id="green" value="green" />
+
+          <label for="yellow" class="color-label yellow"></label>
+          <input type="radio" name="color" id="yellow" value="yellow" />
+
+          <label for="olive" class="color-label olive"></label>
+          <input type="radio" name="color" id="olive" value="olive" />
+
+          <label for="orange" class="color-label orange"></label>
+          <input type="radio" name="color" id="orange" value="orange" />
+
+          <label for="teal" class="color-label teal"></label>
+          <input type="radio" name="color" id="teal" value="teal" />
+
+          <label for="blue" class="color-label blue"></label>
+          <input type="radio" name="color" id="blue" value="blue" />
+
+          <label for="violet" class="color-label violet"></label>
+          <input type="radio" name="color" id="violet" value="violet" />
+
+          <label for="purple" class="color-label purple"></label>
+          <input type="radio" name="color" id="purple" value="purple" />
+
+          <label for="pink" class="color-label pink"></label>
+          <input type="radio" name="color" id="pink" value="pink" />
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">Add</button>
+    </form>
+  </div>
+</body>
+
+</html>
