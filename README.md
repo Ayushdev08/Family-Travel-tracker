@@ -62,7 +62,7 @@ The "Add Country" page allows users to search for and add countries they’ve vi
 4. **Run the application**  
    Start the server with the following command:
    ```bash
-   npm start
+   node index.js
    ```
    The application should now be running on [http://localhost:3000](http://localhost:3000).
 
@@ -74,11 +74,6 @@ The "Add Country" page allows users to search for and add countries they’ve vi
 
 ---
 
-### 🌐 **Live Demo**
-
-Check out the live demo of the project [here](https://your-live-demo-link.com).
-
----
 
 ### 📝 **Contributing**
 
